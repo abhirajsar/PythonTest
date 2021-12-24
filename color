@@ -1,0 +1,9 @@
+def colorize(text,color):
+    colors=("cyan","red","blue","black","green")
+    if type(text) is not str:
+        raise TypeError("text must be instance of str")
+    if color not in colors:
+        raise ValueError("Invalid color")
+    print(f"Printed {text} in {color}")
+
+    colorize("abhishek","red")
